@@ -20,7 +20,7 @@ var news: [ModelNews] {
     if rootDictionary == nil {
         return []
     }
-    if let array = rootDictionary?["articles"] as? [Dictionary<String, Any>]{
+    if let array = rootDictionary?["news"] as? [Dictionary<String, Any>]{
         var returnArray: [ModelNews] = []
             for dict in array {
                 let newNews = ModelNews(dictionary: dict)

@@ -24,6 +24,8 @@ class CustomViewController: UIViewController {
         newsText.lineBreakMode = .byWordWrapping
         titleLable.text = news.title
         newsText.text = news.description
+        newsText.numberOfLines = 0
+        newsText.lineBreakMode = NSLineBreakMode.byWordWrapping
         downloadImage()
     }
     
